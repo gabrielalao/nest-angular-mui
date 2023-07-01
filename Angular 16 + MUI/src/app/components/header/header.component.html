@@ -1,0 +1,25 @@
+<div class="header">
+  <div class="section-content">
+    <div class="logo">
+      <img src="/assets/images/logo-icon.png" alt="logo" />
+      <img src="/assets/images/logo.png" alt="logo text" />
+      <span class="powered-by">Powered by Ricoh Intelligent Business Platform</span>
+    </div>
+    <div class="header-right-block">
+      <mat-menu #appMenu="matMenu">
+        <ng-template matMenuContent let-name="name">
+          <button mat-menu-item>Settings</button>
+          <button mat-menu-item>Log off {{name}}</button>
+        </ng-template>
+      </mat-menu>
+      <button mat-button>More Services</button>
+      <button mat-icon-button>
+        <mat-icon>notifications_none</mat-icon>
+      </button>
+      <button mat-button [matMenuTriggerFor]="appMenu" [matMenuTriggerData]="{name: 'Michel Morris'}">
+        Michel Morris
+        <mat-icon fontIcon="expand_more" aria-label="expand more" iconPositionEnd></mat-icon>
+      </button>
+    </div>
+  </div>
+</div>

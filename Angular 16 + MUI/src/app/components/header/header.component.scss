@@ -1,0 +1,36 @@
+.header {
+  height: 56px;
+  background-color: rgba(102, 102 ,102, 1);
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+
+  .powered-by {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14.4px;
+    color: white;
+  }
+}
+
+.section-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-right-block {
+  display: flex;
+  align-items: center;
+
+  button {
+    color: white;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19.2px;
+  }
+}
